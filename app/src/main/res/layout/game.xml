@@ -1,0 +1,52 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="0,2"
+    android:background="@color/background">
+    <TableRow>
+        <TextView
+            android:id="@+id/Timer"
+            android:layout_column="0"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:text="@string/timer" />
+
+        <ImageButton android:id="@+id/Smiley"
+            android:contentDescription="@string/smiley"
+            android:layout_column="1"
+            android:scaleType="center"
+            android:padding="5dip"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/MineCount"
+            android:layout_column="2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:text="@string/mines" />
+    </TableRow>
+
+    <TableRow>
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/MineField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_span="3"
+            android:gravity="bottom|center"
+            android:background="@color/game_board"
+            android:padding="5dip"
+            android:layout_gravity="bottom|center">
+        </TableLayout>
+    </TableRow>
+</TableLayout>
+
+    <!-- android:stretchColumns="*" -->
